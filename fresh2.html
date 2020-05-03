@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Marvel:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        body {
+            background: rgb(37, 37, 37);
+            font-family: 'Lucida Sans Unicode', 'Arial', serif;
+            color: white;
+        }
+
+        h1,
+        h3,
+        h4,
+        header .btn {
+            font-weight: 700;
+        }
+
+        h1 {
+            margin: 100px 0 20px;
+            text-transform: uppercase;
+            font-size: 2.6rem;
+        }
+
+        h3 {
+            margin-bottom: 25px;
+            font-size: 2.3rem;
+            text-align: left;
+        }
+
+        h4 {
+            font-size: 2rem;
+        }
+
+        h3:after {
+            content: '';
+            display: block;
+            width: 10%;
+            padding-top: 5px;
+            border-bottom: 3px solid whitesmoke;
+        }
+
+        h1+h4 {
+            font-weight: normal;
+        }
+
+        a {
+            text-align: center;
+            outline: none;
+            display: inline-block;
+            text-decoration: none;
+            background: #fcca2f;
+            font-size: 14px;
+            color: steelblue;
+            text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+            -webkit-transition: all ease .3s;
+            transition: all ease .3s;
+        }
+
+        .btn {
+            font-size: 1.2em;
+            border-radius: 5px;
+            padding: 12px 30px;
+        }
+
+        .block {
+            width: 130px;
+            margin: 0 auto;
+            display: block;
+        }
+
+
+
+        /* HEADER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+        header .btn {
+            text-transform: uppercase;
+        }
+
+        header a:hover,
+        .about a:hover {
+            background: #fcc316;
+        }
+
+        header .btn,
+        .services {
+            margin-top: 100px;
+        }
+
+        header {
+            padding: 80px 0 150px;
+            font-family: 'Marvel', sans-serif;
+        }
+
+        .about,
+        .contact {
+            padding: 150px 0;
+        }
+
+        header {
+            background: url("https://unsplash.it/1080/720/?image=377") no-repeat fixed center / cover;
+            text-align: center;
+        }
+
+        nav ul,
+        .contact ul {
+
+            list-style: none;
+            font-size: 0;
+        }
+
+        nav li,
+        .contact li {
+            margin-bottom: 0;
+            display: inline-block;
+
+        }
+
+        nav li {
+            width: 50%;
+
+        }
+
+        nav a {
+            position: relative;
+            width: 100%;
+            height: 30px;
+            padding: 7px 0;
+            line-height: 80px;
+            -webkit-clip-path: polygon(10% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+
+
+        }
+
+        nav li:nth-child(2n+1) a:after {
+            position: absolute;
+            content: '';
+            top: 19.5px;
+            right: -2.5px;
+            z-index: 10;
+            border-radius: 100%;
+            background: steelblue;
+            width: 5px;
+            height: 5px;
+
+        }
+
+
+
+        /* SERVICES STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+        .services a {
+            padding: 25px;
+            background: #fafafa;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+
+        .services a:hover {
+            color: black;
+        }
+
+        .services span {
+            font-size: 5.5em;
+            color: #f4ba04;
+        }
+
+        .services a:hover span {
+            color: white;
+        }
+
+        .services p {
+            margin: 15px 0 0;
+        }
+
+
+
+        /* ABOUT STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+        .about {
+            background: url("https://lh3.googleusercontent.com/qo2LzuqcPliRx0nhgDxnhgr75XtPEjt6d1aSXjprItV3DEZGUf5En-29b7uFC5b1EFr7f4BZx7vnw7KS4SZyd3xfyPqfkt2NW_b2Smdx7o7yiIJN10Xfx2ZO7koCdno8z5LCDrKRaQ") no-repeat fixed center / cover;
+            color: black;
+        }
+
+        .about .one-third,
+        .about .two-thirds {
+            background: white;
+            background: rgba(255, 255, 255, .3);
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .about .one-third {
+            margin-top: 20px;
+        }
+
+        .about a {
+            margin-top: 10px;
+        }
+
+        .about ul {
+            margin-bottom: 18px;
+        }
+
+        .about h3:after,
+        .contact h3:after {
+            border-color: black;
+        }
+
+        .about .center {
+            text-align: center;
+        }
+
+        .about .bottom {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+        .about .one-third a {
+            margin: 10px auto;
+            width: 50%;
+            display: block;
+        }
+
+        .about .two-thirds p:last-child {
+            margin-bottom: 0;
+        }
+
+
+
+        /* CONTACT STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+        .contact {
+            color: black;
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 70px 0 0;
+        }
+
+        .contact ul a {
+            margin-top: 50px;
+            box-shadow: none;
+            background: none;
+            margin-left: 30px;
+        }
+
+        .contact li:nth-child(1) a {
+            margin-left: 0;
+        }
+
+        .contact span {
+            font-size: 2em;
+            color: white;
+            -webkit-transition: color ease .4s;
+            transition: color ease .4s;
+        }
+
+        .contact span:hover {
+            color: steelblue;
+        }
+
+        .contact .btn-blue {
+            position: relative;
+            margin-top: 30px;
+            color: white;
+            background: steelblue;
+            box-shadow: 0 8px #3b6d97;
+        }
+
+        .contact .btn-blue:hover {
+            background: #427aa9;
+            color: white;
+        }
+
+        .contact .btn-blue:after {
+            position: absolute;
+            content: '☃';
+            top: 5px;
+            right: 30px;
+            font-size: 1.6em;
+        }
+
+        .contact .btn-blue:active {
+            box-shadow: 0 4px #3b6d97;
+            -webkit-transform: translateY(4px);
+            -ms-transform: translateY(4px);
+            transform: translateY(4px);
+        }
+
+        .contact .creator a {
+            background: none;
+        }
+
+
+
+        /* MEDIA QUERIES STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+        @media (min-width: 550px) {
+
+            nav li {
+                width: auto;
+            }
+
+            a {
+                box-shadow: 0 8px #f4ba04;
+            }
+
+            nav a {
+                padding: 7px;
+                border-right: 1px solid #fabd03;
+                width: 80px;
+            }
+
+            nav li:nth-child(2n+1) a:after {
+                content: none;
+            }
+
+            nav li:last-child a {
+                border-right: none;
+            }
+
+            header a:hover,
+            .about a:hover {
+                box-shadow: 0 8px #f4ba04;
+            }
+
+            header a:active,
+            .about a:active {
+                box-shadow: 0 4px #f4ba04;
+                -webkit-transform: translateY(4px);
+                -ms-transform: translateY(4px);
+                transform: translateY(4px);
+            }
+
+            .about .one-third {
+                margin-top: 0;
+            }
+
+            .about .one-third a {
+                width: 35%;
+            }
+
+            .contact .creator a {
+                box-shadow: none;
+            }
+
+        }
+
+        .pg {
+            justify-content: center;
+            text-align: center;
+            margin: 2rem;
+        }
+
+        .grid-wrapper {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        }
+
+        .box {
+            border-radius: 10px;
+            background-color: #E64A19;
+            ;
+            padding: 50px;
+            margin: 20px;
+            color: #f5f5f6;
+        }
+
+        .box>img {
+            width: 100%;
+            border-radius: 10px;
+            transition: linear all 1s;
+
+
+        }
+
+        .box>img:hover {
+            transform: scale(1.2);
+        }
+
+        .box a {
+            color: #f5f5f6;
+            padding-right: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+
+        @media (min-width: 750px) {
+
+            h1 {
+                font-size: 3.5rem;
+
+            }
+
+            h3 {
+                font-size: 2.8rem;
+
+
+            }
+
+            h4 {
+                font-size: 2.4rem;
+
+            }
+
+            .services a:hover {
+                box-shadow: 0 -8px white;
+                -webkit-transform: scale(1.15);
+                -ms-transform: scale(1.15);
+                transform: scale(1.15);
+            }
+
+            .contact ul a {
+                margin-left: 45px;
+            }
+
+            .contact ul span {
+                font-size: 3em;
+            }
+
+        }
+
+        .social-icons {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            margin-top: 10px;
+            opacity: .4;
+
+        }
+
+        .social-icons ul {
+            list-style: none;
+        }
+
+        .social-icons ul li {
+            display: inline-block;
+            margin: 0 10px;
+            transition: .25s
+        }
+
+        .social-icons ul li a {
+            color: #000000;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            padding: 13px;
+            line-height: 4.8;
+            display: block;
+            text-align: center;
+            transform: rotate(-30deg) skew(25deg) perspective(20px) translate(0, 0);
+            box-shadow: -20px 20px 15px rgba(0, 0, 0, 0.8);
+            transition: .25s
+        }
+
+        .social-icons ul li a i {
+            color: #000000;
+            font-size: 40px;
+            position: absolute;
+            top: 0;
+            left: 25%;
+            line-height: 2;
+            transition: .25s
+        }
+
+        .social-icons ul li a:before {
+            content: "";
+            position: absolute;
+            top: 80px;
+            left: -9px;
+            height: 20px;
+            width: 100%;
+            background-color: #0f0f;
+            transform: skew(-45deg)
+        }
+
+        .social-icons ul li a:after {
+            content: "";
+            position: absolute;
+            top: 40px;
+            left: -50px;
+            height: 20px;
+            width: 101%;
+            background-color: #0f0f;
+            transform: rotate(90deg) skew(45deg);
+        }
+
+        .social-icons ul li:hover i {
+            color: #FFF
+        }
+
+        .social-icons ul li a:hover {
+            transform: translate(20px, -20px) rotate(-30deg) skew(25deg) perspective(20px);
+            color: #fff
+        }
+
+        .social-icons ul li:nth-child(1) a {
+            background-i: #3b5999;
+        }
+
+        .social-icons ul li:nth-child(1) a:before,
+        .social-icons ul li:nth-child(1) a:after {
+            background-color: #304c8a;
+        }
+
+        .social-icons ul li:nth-child(2) a {
+            background-color: #5accee
+        }
+
+        .social-icons ul li:nth-child(2) a:before,
+        .social-icons ul li:nth-child(2) a:after {
+            background-color: #55b0cc;
+        }
+
+        .social-icons ul li:nth-child(3) a {
+            background-color: #0077b5
+        }
+
+        .social-icons ul li:nth-child(3) a:before,
+        .social-icons ul li:nth-child(3) a:after {
+            background-color: #0369a0;
+        }
+
+        .social-icons ul li:nth-child(4) a {
+            background-color: #e20d06
+        }
+
+        .social-icons ul li:nth-child(4) a:before,
+        .social-icons ul li:nth-child(4) a:after {
+            background-color: #c7110b;
+        }
+
+        @media (max-width: 600px) {
+            ul {
+                transform: scale(0.6);
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 700px) {
+            ul {
+                transform: scale(0.7);
+            }
+        }
+
+        @media (min-width: 701px) and (max-width: 800px) {
+            ul {
+                transform: scale(0.8);
+            }
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: inline;
+            z-index: 1;
+        }
+
+        ul li {
+            margin: 0 40px;
+        }
+
+        ul li a .fa {
+            font-size: 40px;
+            color: #555;
+            line-height: 80px;
+            transition: 0.5s;
+        }
+
+        ul li a {
+            position: relative;
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            background: #fff;
+            text-align: center;
+            transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+            transition: 0.5s;
+            box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        ul li a::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: -20px;
+            height: 100%;
+            width: 20px;
+            background: #b2b2b2;
+            transition: 0.5s;
+            transform: rotate(0deg) skewY(-45deg);
+        }
+
+        ul li a::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: -10px;
+            height: 20px;
+            width: 100%;
+            background: #e5e5e5;
+            transition: 0.5s;
+            transform: rotate(0deg) skewX(-45deg);
+        }
+
+        ul li a:hover {
+            transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+            box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        ul li:hover .fa {
+            color: #fff;
+        }
+
+        ul li:hover:nth-child(1) a {
+            background-color: #3b5999;
+        }
+
+        ul li:hover:nth-child(1) a::before {
+            background-color: #2f477a;
+        }
+
+        ul li:hover:nth-child(1) a::after {
+            background-color: #4e69a3;
+        }
+
+        ul li:hover:nth-child(2) a {
+            background-color: #55acee;
+        }
+
+        ul li:hover:nth-child(2) a::before {
+            background-color: #4489be;
+        }
+
+        ul li:hover:nth-child(2) a::after {
+            background-color: #66b4ef;
+        }
+
+        ul li:hover:nth-child(3) a {
+            background-color: #dd4b39;
+        }
+
+        ul li:hover:nth-child(3) a::before {
+            background-color: #b03c2d;
+        }
+
+        ul li:hover:nth-child(3) a::after {
+            background-color: #e05d4c;
+        }
+
+        ul li:hover:nth-child(4) a {
+            background-color: #0077b5;
+        }
+
+        ul li:hover:nth-child(4) a::before {
+            background-color: #005f90;
+        }
+
+        ul li:hover:nth-child(4) a::after {
+            background-color: #1984bc;
+        }
+
+        ul li:hover:nth-child(5) a {
+            background-color: #e4405f;
+        }
+
+        ul li:hover:nth-child(5) a::before {
+            background-color: #b6334c;
+        }
+
+        ul li:hover:nth-child(5) a::after {
+            background-color: #e6536f;
+        }
+
+        p,
+        h1,
+        form,
+        button {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .spacer {
+            clear: both;
+            height: 1px;
+        }
+
+        /* ----------- My Form ----------- */
+        .myform {
+            margin: 0 auto;
+            width: 400px;
+            padding: 14px;
+        }
+
+        /* ----------- basic ----------- */
+        #basic {
+            border: solid 2px #DEDEDE;
+        }
+
+        #basic h1 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        #basic p {
+            font-size: 11px;
+            color: #666666;
+            margin-bottom: 20px;
+            border-bottom: solid 1px #dedede;
+            padding-bottom: 10px;
+        }
+
+        #basic label {
+            display: block;
+            font-weight: bold;
+            text-align: right;
+            width: 140px;
+            float: left;
+        }
+
+        #basic .small {
+            color: #666666;
+            display: block;
+            font-size: 11px;
+            font-weight: normal;
+            text-align: right;
+            width: 140px;
+        }
+
+        #basic input {
+            float: left;
+            width: 200px;
+            margin: 2px 0 30px 10px;
+        }
+
+        #basic button {
+            clear: both;
+            margin-left: 150px;
+            background: #888888;
+            color: #FFFFFF;
+            border: solid 1px #666666;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 4px 6px;
+        }
+
+
+        /* ----------- stylized ----------- */
+        #stylized {
+            border: solid 2px #b7ddf2;
+            background: #ebf4fb;
+
+        }
+
+        #stylized h1 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        #stylized p {
+            font-size: 11px;
+            color: #666666;
+            margin-bottom: 20px;
+            border-bottom: solid 1px #b7ddf2;
+            padding-bottom: 10px;
+        }
+
+        #stylized label {
+            display: block;
+            font-weight: bold;
+            text-align: right;
+            width: 140px;
+            float: left;
+        }
+
+        #stylized .small {
+            color: #666666;
+            display: block;
+            font-size: 11px;
+            font-weight: normal;
+            text-align: right;
+            width: 140px;
+        }
+
+        #stylized input {
+            float: left;
+            font-size: 12px;
+            padding: 4px 2px;
+            border: solid 1px #aacfe4;
+            width: 200px;
+            margin: 2px 0 20px 10px;
+        }
+
+        #stylized button {
+            clear: both;
+            margin-left: 160px;
+            width: 125px;
+            height: 31px;
+            background: #444;
+            text-align: center;
+            line-height: 31px;
+            color: #FFFFFF;
+            font-size: 11px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <div class="row">
+                <div class="twelve columns">
+                    <nav>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Writing</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h1>- Design What You Imagine -</h1>
+                    <h4></h4>
+                    <a href="#" class="btn">Hire me</a>
+                </div>
+            </div>
+
+            <section class="services">
+                <div class="row">
+                    <div class="twelve columns">
+                        <h3>My areas of expertise</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="one-half column">
+                        <a href="#">
+                            <h4>Responsive Design</h4>
+
+                            <span class="fa fa-picture-o"></span>
+                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        </a>
+                    </div>
+                    <div class="one-half column">
+                        <a href="#">
+                            <h4>Clean Code</h4>
+                            <span class="fa fa-leaf"></span>
+                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        </a>
+                    </div>
+                </div>
+                <!--end of .row-->
+            </section>
+        </div>
+        <!--end of .container-->
+    </header>
+
+    <!--ABOUT-->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <h3>Who am I</h3>
+                </div>
+            </div>
+            <!--end of .row-->
+            <div class="row bottom">
+                <div class="two-thirds column">
+                    <p>Fernando Vergara The Web Developer</p>
+                    <p>2 years of innovation in Web Development and Programming. Skilled
+                        problem-solver with fast a learning curve for cutting edge technology
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        mus.
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+                        enim.</p>
+                    <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
+                        semper nisi. Aenean vulputate eleifend tellus.</p>
+                </div>
+                <div class="one-third column">
+                    <h4>Accomplishents</h4>
+                    <ul>
+                        <li>Google IT Support program</li>
+                        <li>API developemnt </li>
+
+                    </ul>
+
+                    </ul>
+                    <a href="#" class="btn">CV</a>
+                </div>
+            </div>
+            <!--end of .row-->
+            <div class="row">
+                <div class="twelve columns">
+                    <h4 class="center">Interested in samples of my work?</h4>
+                </div>
+            </div>
+            <!--end of .row-->
+            <div class="row">
+                <div class="pg">
+                    <h2 class="pg-header"><i class="fas fa-briefcase"></i> project Gallary</h2>
+                </div>
+                <div class="grid-wrapper">
+
+                    <div class="box"><img src="https://cdn.pixabay.com/photo/2015/05/28/14/38/ux-787980_960_720.jpg"
+                            alt="">
+                        <br>
+                        <p><a href="https://codepen.io/jk-20/pen/RwNwPXB"><i class="fab fa-codepen"></i></a>
+                            <i class="far fa-eye"> 13</i>
+                            <i class="far fa-heart"> 0</i>
+                        </p>
+
+
+                    </div>
+                    <div class="box"><img
+                            src="https://cdn.pixabay.com/photo/2016/02/19/11/19/computer-1209641_960_720.jpg" alt="">
+                        <p><a href="https://codepen.io/jk-20/pen/yLyLZeQ"><i class="fab fa-codepen"></i></a>
+                            <i class="far fa-eye"> 18</i>
+                            <i class="far fa-heart"> 0</i>
+                        </p>
+
+                    </div>
+                    <div class="box"><img
+                            src="https://cdn.pixabay.com/photo/2014/03/22/22/17/twitter-292994_960_720.jpg" alt="">
+                        <p><a href="https://codepen.io/jk-20/pen/XWWwxzz"><i class="fab fa-codepen"></i></a>
+                            <i class="far fa-eye"> 3</i>
+                            <i class="far fa-heart"> 0</i>
+                        </p>
+
+                    </div>
+                    <div class="box"><img
+                            src="https://cdn.pixabay.com/photo/2015/01/27/20/40/notebook-614213_960_720.jpg" alt="">
+                        <p><a href="https://codepen.io/jk-20/pen/dyPbQzg"><i class="fab fa-codepen"></i></a>
+                            <i class="far fa-eye"> 20</i>
+                            <i class="far fa-heart"> 0</i>
+                        </p>
+
+
+                    </div>
+                    <div class="box"><img src="https://cdn.pixabay.com/photo/2015/04/20/13/17/work-731198_960_720.jpg"
+                            alt="">
+                        <p><a href="https://codepen.io/jk-20/pen/RwNwPXB"><i class="fab fa-codepen"></i></a>
+                            <i class="far fa-eye"> 13</i>
+                            <i class="far fa-heart"> 0</i>
+                        </p>
+
+                    </div>
+                    <div class="box"><img
+                            src="https://cdn.pixabay.com/photo/2016/10/09/08/32/digital-marketing-1725340_960_720.jpg"
+                            alt="">
+
+                        <p><a href="https://codepen.io/jk-20/pen/yLyLZeQ"><i class="fab fa-codepen"></i></a>
+                            <i class="far fa-eye"> 18</i>
+                            <i class="far fa-heart"> 0</i>
+                        </p>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <!--end of .row-->
+        </div>
+        <!--end of .container-->
+    </section>
+
+    <!--CONTACT-->
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <div id="stylized" class="myform">
+
+                        <form id="form1" id="form1" action="mail.php" method="POST">
+
+                            <label>Name
+                                <span class="small">Add your name</span>
+                            </label>
+                            <input type="text" name="name">
+                            <label>Email
+                                <span class="small">Enter a Valid Email</span>
+                            </label>
+                            <input type="text" name="email">
+                            <label>Phone
+                                <span class="small">Add a Phone Number</span>
+                            </label>
+                            <input type="text" name="phone">
+
+                            <br />
+                            <br />
+
+                            <label>Website
+                                <span class="small">Your Website</span>
+                            </label>
+                            <input type="text" name="website">
+
+                            <label>Priority
+                                <span class="small">Priority Level </span>
+                            </label>
+
+                            <select name="priority" size="1">
+                                <option value="Low">Low</option>
+                                <option value="Normal">Normal</option>
+                                <option value="High">High</option>
+                                <option value="Emergency">Emergency</option>
+                            </select>
+                            <br />
+                            <br />
+                            <br />
+                            <label>Type
+                                <span class="small">Type of Contact</span>
+                            </label>
+                            <select name="type" size="1">
+                                <option value="update">Website Update</option>
+                                <option value="change">Information Change</option>
+                                <option value="addition">Information Addition</option>
+                                <option value="new">New Products</option>
+                            </select>
+                            <br />
+                            <br />
+                            <br />
+
+
+                            <label>Message
+                                <span class="small">Type Your Message</span>
+                            </label>
+                            <textarea name="message" rows="6" cols="25"></textarea><br />
+
+                            <button type="submit" value="Send" style="margin-top:15px;">Submit</button>
+                            <div class="spacer"></div>
+
+                        </form>
+
+                    </div> <!-- end of form class -->
+                </div>
+            </div>
+            <!--end of .row-->
+            <div class="row">
+                <div class="offset-by-two eight columns">
+                    <ul>
+                        <li><a href="#" title=""><span class="fa fa-facebook"></span></a></li>
+                        <li><a href="#" title=""><span class="fa fa-twitter"></span></a></li>
+                        <li><a href="#" title=""><span class="fa fa-dribbble"></span></a></li>
+                        <li><a href="#" title=""><span class="fa fa-linkedin"></span></a></li>
+                        <li><a href="#" title=""><span class="fa fa-github"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--end of .row-->
+            <div class="row">
+                <div class="twelve columns">
+                    <a href="#" class="btn block btn-blue">Mail me</a>
+                </div>
+            </div>
+            <!--end of .row-->
+            <div class="row">
+                <div class="twelve columns">
+                    <p class="creator">A demo by George Martsoukos. <a
+                            href="http://www.sitepoint.com/getting-started-with-skeleton-simple-css-boilerplate">See
+                            article</a>.</p>
+                </div>
+            </div>
+            <!--end of .row-->
+        </div>
+        <!--end of .container-->
+    </section>
+</body>
+
+</html>
